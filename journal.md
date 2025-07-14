@@ -11,12 +11,8 @@ $ git init
 ```
 - [x] add .gitignore file:
 ```
-/*
-!.gitignore
-!README.md
-!journal.md
-!/wp-content
-/wp-content/uploads
+node_modules
+dist/
 ```
 - [x] initial commit
 - [x] create github repo
