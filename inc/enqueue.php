@@ -16,7 +16,7 @@ if (!function_exists('mcsigma_scripts')) {
         wp_enqueue_style('mcsigma-google-font-inter');
         wp_enqueue_style('main-css');
         //
-        wp_enqueue_script('main-js', get_theme_file_uri('/js/index.js'), [], time(), true);
+        wp_enqueue_script('main-js', get_theme_file_uri('/build/index.js'), [], time(), true);
         wp_enqueue_script('alpine-js', 'https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js', [], '1.0', true);
         // wp_enqueue_style(
         //     'google-font-roboto',

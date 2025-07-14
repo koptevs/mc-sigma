@@ -9,15 +9,15 @@
     "preview": "npm-run-all --parallel sync wpstart tailwindwatch",
     "sync": "browser-sync start --config browser-sync.config.js",
     "wpstart": "wp-scripts start",
-    "tailwindwatch": "@tailwindcss -i ./src/styles.css -o ./css/styles.css --watch --minify",
-    "start": "npm-run-all --parallel wpstart tailwindwatch",
+    "tailwindwatch": "@tailwindcss -i ./src/styles.css -o ./css/styles.css --watch",
+    "start": "npm-run-all --parallel tailwindwatch wpstart sync",
     "buildwp": "wp-scripts build",
     "tailwindbuild": "@tailwindcss -i ./src/styles.css -o ./css/styles.css --minify",
-    "build": "npm-run-all --sequential buildwp tailwindbuild",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm-run-all --sequential buildwp tailwindbuild"
   },
   "devDependencies": {
     "@tailwindcss/cli": "^4.1.11",
+    "@wordpress/scripts": "^30.19.0",
     "browser-sync": "^3.0.4",
     "npm-run-all": "^4.1.5",
     "prettier": "^3.6.2",
