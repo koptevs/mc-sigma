@@ -41,4 +41,14 @@ echo '@import "tailwindcss";' > src/styles.css
 - [x] preconnect fonts
 - [x] add fonts to tailwind
 - [x] add header and footer (files and getters in index.php)
+
+- [x] install packages for building and syncing 
+```
+npm install browser-sync npm-run-all -D
+``` 
+- [x] add browser-sync.config.js
+- [x] add CLI commands for syncing
+
+
+
 ### JS bundler
