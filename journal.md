@@ -5,7 +5,7 @@
 - [x] create theme folder
 - [x] add index.php to the theme folder
 - [x] add [style.css](https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/) to the theme folder
-- [x] initialize git repo in the root directory:
+- [x] initialize git repo in the root directory of the theme:
 ```
 $ git init
 ```
@@ -19,7 +19,7 @@ dist/
 
 ## Development environment
 ### TailwindCSS
-- [x] initialize project ( creates a package.json )
+- [x] initialize project ( creates a package.json ) in the root directory of the theme:
 ```
 npm init
 ```
@@ -30,5 +30,12 @@ mkdir src
 touch src/styles.css
 echo '@import "tailwindcss";' > src/styles.css
 ``` 
+- [x] add CLI commands for tailwind
+```
+"scripts": {
+    "tailwindwatch": "@tailwindcss -i ./src/styles.css -o ./css/styles.css --watch --minify",
+    "tailwindbuild": "@tailwindcss -i ./src/styles.css -o ./css/styles.css --minify",
+  },
+```
 ### JS bundler
 ### Node CLI commands 
