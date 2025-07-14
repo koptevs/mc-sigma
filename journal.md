@@ -37,5 +37,8 @@ echo '@import "tailwindcss";' > src/styles.css
     "tailwindbuild": "@tailwindcss -i ./src/styles.css -o ./css/styles.css --minify",
   },
 ```
+- [x] enqueue fonts
+- [x] preconnect fonts
+- [x] add fonts to tailwind
+- [x] add header and footer (files and getters in index.php)
 ### JS bundler
-### Node CLI commands 
