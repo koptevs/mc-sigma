@@ -1,0 +1,25 @@
+{
+  "name": "public",
+  "version": "1.0.0",
+  "description": "Wordpress theme",
+  "main": "index.js",
+  "author": "IK",
+  "license": "ISC",
+ "scripts": {
+    "preview": "npm-run-all --parallel sync wpstart tailwindwatch",
+    "sync": "browser-sync start --config browser-sync.config.js",
+    "wpstart": "wp-scripts start",
+    "tailwindwatch": "@tailwindcss -i ./src/styles.css -o ./css/styles.css --watch --minify",
+    "start": "npm-run-all --parallel wpstart tailwindwatch",
+    "buildwp": "wp-scripts build",
+    "tailwindbuild": "@tailwindcss -i ./src/styles.css -o ./css/styles.css --minify",
+    "build": "npm-run-all --sequential buildwp tailwindbuild",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.11",
+    "prettier": "^3.6.2",
+    "prettier-plugin-tailwindcss": "^0.6.14",
+    "tailwindcss": "^4.1.11"
+  }
+}
