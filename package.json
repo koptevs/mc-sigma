@@ -2,10 +2,10 @@
 	"name": "mc-sigma",
 	"version": "1.0.0",
 	"private": false,
-  "scripts": {
-        "format": "prettier --write src/app/",
-        "format:check": "prettier --check src/app/",
-            },
+	"scripts": {
+		"format": "prettier --write parts/ templates/ theme.json package.json",
+		"format:check": "prettier --check parts/ templates/ theme.json package.json"
+	},
 	"devDependencies": {
 		"@wordpress/prettier-config": "^4.27.0",
 		"prettier": "^3.6.2"
