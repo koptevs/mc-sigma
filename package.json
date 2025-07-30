@@ -1,0 +1,13 @@
+{
+	"name": "mc-sigma",
+	"version": "1.0.0",
+	"private": false,
+  "scripts": {
+        "format": "prettier --write src/app/",
+        "format:check": "prettier --check src/app/",
+            },
+	"devDependencies": {
+		"@wordpress/prettier-config": "^4.27.0",
+		"prettier": "^3.6.2"
+	}
+}
