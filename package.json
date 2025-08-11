@@ -4,10 +4,14 @@
 	"private": false,
 	"scripts": {
 		"format": "prettier --write parts/ templates/ theme.json package.json",
-		"format:check": "prettier --check parts/ templates/ theme.json package.json"
+		"format:check": "prettier --check parts/ templates/ theme.json package.json",
+		"sync": "browser-sync start --config browser-sync.config.js",
+		"make:theme": "node ./src/theme-merge.js ./src/theme"
 	},
 	"devDependencies": {
 		"@wordpress/prettier-config": "^4.27.0",
+		"browser-sync": "^3.0.4",
+		"import-fresh": "^3.3.1",
 		"prettier": "^3.6.2"
 	}
 }
