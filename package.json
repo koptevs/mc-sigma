@@ -5,13 +5,45 @@
 	"scripts": {
 		"format": "prettier --write parts/ templates/ theme.json package.json",
 		"format:check": "prettier --check parts/ templates/ theme.json package.json",
-		"sync": "browser-sync start --config browser-sync.config.js",
-		"make:theme": "node ./src/theme-merge.js ./src/theme"
+		"css": "npm-run-all css-compile css-postcss css-minify",
+		"css-compile": "sass --style expanded --source-map --embed-sources --no-error-css --quiet src/sass/theme.scss:assets/css/theme.css",
+		"css-postcss": "postcss --config src/build/postcss.config.js --replace \"assets/css/*.css\" \"!css/*.min.css\"",
+		"css-minify": "cleancss -O1 --format breakWith=lf --with-rebase --source-map --source-map-inline-sources --output assets/css/ --batch --batch-suffix \".min\" \"assets/css/*.css\" \"!assets/css/*.min.css\"",
+		"watch-run-css": "nodemon --watch src/sass/ --ext scss --exec \"npm-run-all css\"",
+		"bs": "browser-sync start --config src/build/browser-sync.config.js",
+		"make:theme": "node ./src/theme-merge.js ./src/theme-json-src",
+		"watch-run-theme-json": "nodemon --watch src/theme-json-src/ --ext js --exec \"npm-run-all make:theme\"",
+		"js": "npm-run-all js-compile js-minify js-format",
+		"js-compile": "rollup --config src/build/rollup.config.js --sourcemap",
+		"js-minify": "terser assets/js/theme.min.js --config-file src/build/terser.config.json --source-map \"content=assets/js/theme.js.map,url=theme.min.js.map,filename=theme.min.js\" --output assets/js/theme.min.js",
+		"js-format": "prettier --write assets/js/theme.js",
+		"watch-run-js": "nodemon --watch src/js/ --ext js --exec \"npm-run-all js\"",
+		"watch": "npm-run-all --parallel watch-run-*",
+		"watch-bs": "npm-run-all --parallel bs watch-run-*"
 	},
 	"devDependencies": {
+		"@babel/core": "^7.28.0",
+		"@babel/preset-env": "^7.28.0",
+		"@rollup/plugin-babel": "^6.0.4",
+		"@rollup/plugin-commonjs": "^28.0.6",
+		"@rollup/plugin-multi-entry": "^6.0.1",
+		"@rollup/plugin-node-resolve": "^16.0.1",
+		"@rollup/plugin-replace": "^6.0.2",
 		"@wordpress/prettier-config": "^4.27.0",
+		"autoprefixer": "^10.4.21",
 		"browser-sync": "^3.0.4",
+		"clean-css-cli": "^5.6.3",
 		"import-fresh": "^3.3.1",
-		"prettier": "^3.6.2"
-	}
+		"nodemon": "^3.1.10",
+		"npm-run-all": "^4.1.5",
+		"postcss": "^8.5.6",
+		"postcss-cli": "^11.0.1",
+		"prettier": "^3.6.2",
+		"rollup": "^4.46.2",
+		"sass": "^1.90.0",
+		"terser": "^5.43.1"
+	},
+	"browserslist": [
+		"last 5 versions"
+	]
 }
