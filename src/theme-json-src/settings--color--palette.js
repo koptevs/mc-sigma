@@ -1,12 +1,26 @@
 // import * as twPalette from './tw-palette'
 const twPalette = require('../tw-palette');
 
-const primary = twPalette["sky-900"]
-const buttonBg = twPalette["sky-900"]
-const buttonBgHover = twPalette["sky-800"]
-const buttonShadow = twPalette['gray-200']
+const primary = twPalette['sky-900'];
+const buttonBg = twPalette['sky-900'];
+const buttonBgHover = twPalette['sky-800'];
+const buttonShadow = "rgba(0,0,0,0.1)";
+const siteTitle = twPalette['gray-200'];
+const siteNavbarText = twPalette['gray-200'];
+const siteNavbarBg = twPalette['gray-200'];
+const siteNavbarBgScrolled = twPalette['gray-200'];
 
 module.exports = [
+	{
+		color: siteNavbarText,
+		name: 'Site Navbar Text',
+		slug: 'site-navbar-text',
+	},
+	{
+		color: siteTitle,
+		name: 'Site Title',
+		slug: 'site-title',
+	},
 	{
 		color: primary,
 		name: 'Primary',
@@ -84,8 +98,8 @@ module.exports = [
 	},
 	{
 		color: '#FAFAFA',
-		name: 'Button Hover Text Color ',
-		slug: 'button-hover-text-color',
+		name: 'Button Hover Text ',
+		slug: 'button-hover-text',
 	},
 	{
 		color: 'rgba(0, 0, 0, 0.1)',
@@ -101,5 +115,20 @@ module.exports = [
 		color: 'rgba(0, 0, 0, 0.3)',
 		name: 'Black Transparent 30',
 		slug: 'black-transparent-30',
+	},
+	{
+		color: 'rgba(0, 0, 0, 0.4)',
+		name: 'Black Transparent 40',
+		slug: 'black-transparent-40',
+	},
+	{
+		color: 'rgba(0, 0, 0, 0.5)',
+		name: 'Black Transparent 50',
+		slug: 'black-transparent-50',
+	},
+	{
+		color: 'rgba(0, 0, 0, 0.6)',
+		name: 'Black Transparent 60',
+		slug: 'black-transparent-60',
 	},
 ];

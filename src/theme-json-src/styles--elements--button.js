@@ -6,9 +6,9 @@ module.exports = {
 	spacing: {
 		padding: {
 			top: '0.75em',
-			right: '1.5rem',
+			right: '1.25rem',
 			bottom: '0.75em',
-			left: '1.5rem',
+			left: '1.25rem',
 		},
 	},
 	color: {
@@ -24,7 +24,7 @@ module.exports = {
 		fontFamily: 'var:preset|font-family|body',
 	},
 	':hover': {
-		shadow: '0px 0px 10px 2px var(--wp--preset--color--button-shadow)',
+		shadow: '0px 0px 5px 2px var(--wp--preset--color--button-shadow)',
 		border: {
 			color: 'var(--wp--preset--color--button-shadow)',
 			width: '0px',

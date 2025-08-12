@@ -1,7 +1,7 @@
 module.exports = {
 	css:"",
 	color: {
-		text: 'var:preset|color|accent',
+		text: 'var(--wp--preset--color--site-title)',
 		background: 'none',
 		gradient: 'none',
 	},

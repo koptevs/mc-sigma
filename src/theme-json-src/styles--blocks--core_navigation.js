@@ -27,6 +27,6 @@ module.exports = {
 	color: {
 		background: '',
 		gradient: '',
-		text: 'var:preset|color|black',
+		text: 'var(--wp--preset--color--site-navbar-text)',
 	}
 };
