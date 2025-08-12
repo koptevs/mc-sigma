@@ -74,8 +74,8 @@ module.exports = [
 	},
 	{
 		color: buttonBgHover,
-		name: 'Button Hover Color',
-		slug: 'button-hover',
+		name: 'Button Background Hover Color',
+		slug: 'button-bg-hover',
 	},
 	{
 		color: buttonShadow,

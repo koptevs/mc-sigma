@@ -31,7 +31,7 @@ module.exports = {
 			style: 'solid',
 		},
 		color: {
-			background: 'var(--wp--preset--color--button-hover)',
+			background: 'var(--wp--preset--color--button-bg-hover)',
 			text: 'var(--wp--preset--color--white)',
 		},
 	},
