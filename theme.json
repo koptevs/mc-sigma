@@ -22,6 +22,16 @@
       ],
       "palette": [
         {
+          "color": "oklch(0.928 0.006 264.531)",
+          "name": "Site Navbar Text",
+          "slug": "site-navbar-text"
+        },
+        {
+          "color": "oklch(0.928 0.006 264.531)",
+          "name": "Site Title",
+          "slug": "site-title"
+        },
+        {
           "color": "oklch(0.391 0.09 240.876)",
           "name": "Primary",
           "slug": "primary"
@@ -92,14 +102,14 @@
           "slug": "button-bg-hover"
         },
         {
-          "color": "oklch(0.928 0.006 264.531)",
+          "color": "rgba(0,0,0,0.1)",
           "name": "Button Shadow",
           "slug": "button-shadow"
         },
         {
           "color": "#FAFAFA",
-          "name": "Button Hover Text Color ",
-          "slug": "button-hover-text-color"
+          "name": "Button Hover Text ",
+          "slug": "button-hover-text"
         },
         {
           "color": "rgba(0, 0, 0, 0.1)",
@@ -115,6 +125,21 @@
           "color": "rgba(0, 0, 0, 0.3)",
           "name": "Black Transparent 30",
           "slug": "black-transparent-30"
+        },
+        {
+          "color": "rgba(0, 0, 0, 0.4)",
+          "name": "Black Transparent 40",
+          "slug": "black-transparent-40"
+        },
+        {
+          "color": "rgba(0, 0, 0, 0.5)",
+          "name": "Black Transparent 50",
+          "slug": "black-transparent-50"
+        },
+        {
+          "color": "rgba(0, 0, 0, 0.6)",
+          "name": "Black Transparent 60",
+          "slug": "black-transparent-60"
         }
       ]
     },
@@ -255,6 +280,19 @@
   },
   "styles": {
     "blocks": {
+      "core/navigation-submenu": {
+        "color": {
+          "background": "red"
+        },
+        "spacing": {
+          "padding": {
+            "top": "20",
+            "right": "20",
+            "bottom": "20",
+            "left": "20"
+          }
+        }
+      },
       "core/navigation": {
         "dimensions": {
           "minHeight": "14px"
@@ -286,7 +324,7 @@
         "color": {
           "background": "",
           "gradient": "",
-          "text": "var:preset|color|black"
+          "text": "var(--wp--preset--color--site-navbar-text)"
         }
       },
       "core/paragraph": {
@@ -309,7 +347,7 @@
       "core/site-title": {
         "css": "",
         "color": {
-          "text": "var:preset|color|accent",
+          "text": "var(--wp--preset--color--site-title)",
           "background": "none",
           "gradient": "none"
         },
@@ -343,9 +381,9 @@
         "spacing": {
           "padding": {
             "top": "0.75em",
-            "right": "1.5rem",
+            "right": "1.25rem",
             "bottom": "0.75em",
-            "left": "1.5rem"
+            "left": "1.25rem"
           }
         },
         "color": {
@@ -361,7 +399,7 @@
           "fontFamily": "var:preset|font-family|body"
         },
         ":hover": {
-          "shadow": "0px 0px 10px 2px var(--wp--preset--color--button-shadow)",
+          "shadow": "0px 0px 5px 2px var(--wp--preset--color--button-shadow)",
           "border": {
             "color": "var(--wp--preset--color--button-shadow)",
             "width": "0px",
