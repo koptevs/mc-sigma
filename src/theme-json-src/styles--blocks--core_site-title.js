@@ -6,10 +6,10 @@ module.exports = {
 		gradient: 'none',
 	},
 	typography: {
-		fontFamily: 'var:preset|font-family|body',
+		fontFamily: 'var:preset|font-family|title',
 		fontSize: 'var(--wp--preset--font-size--large)',
-		fontWeight: '300',
-		letterSpacing: 'calc(-3px)',
+		fontWeight: '600',
+		letterSpacing: 'calc(1.3px)',
 		textTransform: 'none',
 	},
 };
