@@ -19,7 +19,10 @@
 		"js-format": "prettier --write assets/js/theme.js",
 		"watch-run-js": "nodemon --watch src/js/ --ext js --exec \"npm-run-all js\"",
 		"watch": "npm-run-all --parallel watch-run-*",
-		"watch-bs": "npm-run-all --parallel bs watch-run-*"
+		"watch-bs": "npm-run-all --parallel bs watch-run-*",
+		"dist": "npm-run-all --parallel css js make:theme",
+		"dist-build": "node src/build/dist-build.js",
+		"dist-clean": "node src/build/dist-clean.js"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.28.0",
