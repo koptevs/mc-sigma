@@ -216,7 +216,300 @@
           ],
           "fontFamily": "\"Inter\", sans-serif",
           "name": "Inter",
-          "slug": "body"
+          "slug": "body_old"
+        },
+        {
+          "name": "Oswald",
+          "slug": "title",
+          "fontFamily": "Oswald, sans-serif",
+          "fontFace": [
+            {
+              "src": [
+                "file:./assets/fonts/oswald/oswald-200-normal.woff2"
+              ],
+              "fontWeight": "200",
+              "fontStyle": "normal",
+              "fontFamily": "Oswald"
+            },
+            {
+              "src": [
+                "file:./assets/fonts/oswald/oswald-300-normal.woff2"
+              ],
+              "fontWeight": "300",
+              "fontStyle": "normal",
+              "fontFamily": "Oswald"
+            },
+            {
+              "src": [
+                "file:./assets/fonts/oswald/oswald-400-normal.woff2"
+              ],
+              "fontWeight": "400",
+              "fontStyle": "normal",
+              "fontFamily": "Oswald"
+            },
+            {
+              "src": [
+                "file:./assets/fonts/oswald/oswald-500-normal.woff2"
+              ],
+              "fontWeight": "500",
+              "fontStyle": "normal",
+              "fontFamily": "Oswald"
+            },
+            {
+              "src": [
+                "file:./assets/fonts/oswald/oswald-600-normal.woff2"
+              ],
+              "fontWeight": "600",
+              "fontStyle": "normal",
+              "fontFamily": "Oswald"
+            },
+            {
+              "src": [
+                "file:./assets/fonts/oswald/oswald-700-normal.woff2"
+              ],
+              "fontWeight": "700",
+              "fontStyle": "normal",
+              "fontFamily": "Oswald"
+            }
+          ]
+        },
+        {
+          "name": "IBM Plex Sans",
+          "slug": "body",
+          "fontFamily": "\"IBM Plex Sans\", sans-serif",
+          "fontFace": [
+            {
+              "src": [
+                "file:./assets/fonts/ibm-plex-sans/ibm-plex-sans-100-normal.woff2"
+              ],
+              "fontWeight": "100",
+              "fontStyle": "normal",
+              "fontFamily": "\"IBM Plex Sans\""
+            },
+            {
+              "src": [
+                "file:./assets/fonts/ibm-plex-sans/ibm-plex-sans-200-normal.woff2"
+              ],
+              "fontWeight": "200",
+              "fontStyle": "normal",
+              "fontFamily": "\"IBM Plex Sans\""
+            },
+            {
+              "src": [
+                "file:./assets/fonts/ibm-plex-sans/ibm-plex-sans-300-normal.woff2"
+              ],
+              "fontWeight": "300",
+              "fontStyle": "normal",
+              "fontFamily": "\"IBM Plex Sans\""
+            },
+            {
+              "src": [
+                "file:./assets/fonts/ibm-plex-sans/ibm-plex-sans-400-normal.woff2"
+              ],
+              "fontWeight": "400",
+              "fontStyle": "normal",
+              "fontFamily": "\"IBM Plex Sans\""
+            },
+            {
+              "src": [
+                "file:./assets/fonts/ibm-plex-sans/ibm-plex-sans-500-normal.woff2"
+              ],
+              "fontWeight": "500",
+              "fontStyle": "normal",
+              "fontFamily": "\"IBM Plex Sans\""
+            },
+            {
+              "src": [
+                "file:./assets/fonts/ibm-plex-sans/ibm-plex-sans-600-normal.woff2"
+              ],
+              "fontWeight": "600",
+              "fontStyle": "normal",
+              "fontFamily": "\"IBM Plex Sans\""
+            },
+            {
+              "src": [
+                "file:./assets/fonts/ibm-plex-sans/ibm-plex-sans-700-normal.woff2"
+              ],
+              "fontWeight": "700",
+              "fontStyle": "normal",
+              "fontFamily": "\"IBM Plex Sans\""
+            },
+            {
+              "src": [
+                "file:./assets/fonts/ibm-plex-sans/ibm-plex-sans-100-italic.woff2"
+              ],
+              "fontWeight": "100",
+              "fontStyle": "italic",
+              "fontFamily": "\"IBM Plex Sans\""
+            },
+            {
+              "src": [
+                "file:./assets/fonts/ibm-plex-sans/ibm-plex-sans-200-italic.woff2"
+              ],
+              "fontWeight": "200",
+              "fontStyle": "italic",
+              "fontFamily": "\"IBM Plex Sans\""
+            },
+            {
+              "src": [
+                "file:./assets/fonts/ibm-plex-sans/ibm-plex-sans-300-italic.woff2"
+              ],
+              "fontWeight": "300",
+              "fontStyle": "italic",
+              "fontFamily": "\"IBM Plex Sans\""
+            },
+            {
+              "src": [
+                "file:./assets/fonts/ibm-plex-sans/ibm-plex-sans-400-italic.woff2"
+              ],
+              "fontWeight": "400",
+              "fontStyle": "italic",
+              "fontFamily": "\"IBM Plex Sans\""
+            },
+            {
+              "src": [
+                "file:./assets/fonts/ibm-plex-sans/ibm-plex-sans-500-italic.woff2"
+              ],
+              "fontWeight": "500",
+              "fontStyle": "italic",
+              "fontFamily": "\"IBM Plex Sans\""
+            },
+            {
+              "src": [
+                "file:./assets/fonts/ibm-plex-sans/ibm-plex-sans-600-italic.woff2"
+              ],
+              "fontWeight": "600",
+              "fontStyle": "italic",
+              "fontFamily": "\"IBM Plex Sans\""
+            },
+            {
+              "src": [
+                "file:./assets/fonts/ibm-plex-sans/ibm-plex-sans-700-italic.woff2"
+              ],
+              "fontWeight": "700",
+              "fontStyle": "italic",
+              "fontFamily": "\"IBM Plex Sans\""
+            }
+          ]
+        },
+        {
+          "name": "IBM Plex Sans Condensed",
+          "slug": "title_2",
+          "fontFamily": "\"IBM Plex Sans Condensed\", sans-serif",
+          "fontFace": [
+            {
+              "src": [
+                "file:./assets/fonts/ibm-plex-sans-condensed/ibm-plex-sans-condensed-100-normal.woff2"
+              ],
+              "fontWeight": "100",
+              "fontStyle": "normal",
+              "fontFamily": "\"IBM Plex Sans Condensed\""
+            },
+            {
+              "src": [
+                "file:./assets/fonts/ibm-plex-sans-condensed/ibm-plex-sans-condensed-200-normal.woff2"
+              ],
+              "fontWeight": "200",
+              "fontStyle": "normal",
+              "fontFamily": "\"IBM Plex Sans Condensed\""
+            },
+            {
+              "src": [
+                "file:./assets/fonts/ibm-plex-sans-condensed/ibm-plex-sans-condensed-300-normal.woff2"
+              ],
+              "fontWeight": "300",
+              "fontStyle": "normal",
+              "fontFamily": "\"IBM Plex Sans Condensed\""
+            },
+            {
+              "src": [
+                "file:./assets/fonts/ibm-plex-sans-condensed/ibm-plex-sans-condensed-400-normal.woff2"
+              ],
+              "fontWeight": "400",
+              "fontStyle": "normal",
+              "fontFamily": "\"IBM Plex Sans Condensed\""
+            },
+            {
+              "src": [
+                "file:./assets/fonts/ibm-plex-sans-condensed/ibm-plex-sans-condensed-500-normal.woff2"
+              ],
+              "fontWeight": "500",
+              "fontStyle": "normal",
+              "fontFamily": "\"IBM Plex Sans Condensed\""
+            },
+            {
+              "src": [
+                "file:./assets/fonts/ibm-plex-sans-condensed/ibm-plex-sans-condensed-600-normal.woff2"
+              ],
+              "fontWeight": "600",
+              "fontStyle": "normal",
+              "fontFamily": "\"IBM Plex Sans Condensed\""
+            },
+            {
+              "src": [
+                "file:./assets/fonts/ibm-plex-sans-condensed/ibm-plex-sans-condensed-700-normal.woff2"
+              ],
+              "fontWeight": "700",
+              "fontStyle": "normal",
+              "fontFamily": "\"IBM Plex Sans Condensed\""
+            },
+            {
+              "src": [
+                "file:./assets/fonts/ibm-plex-sans-condensed/ibm-plex-sans-condensed-100-italic.woff2"
+              ],
+              "fontWeight": "100",
+              "fontStyle": "italic",
+              "fontFamily": "\"IBM Plex Sans Condensed\""
+            },
+            {
+              "src": [
+                "file:./assets/fonts/ibm-plex-sans-condensed/ibm-plex-sans-condensed-200-italic.woff2"
+              ],
+              "fontWeight": "200",
+              "fontStyle": "italic",
+              "fontFamily": "\"IBM Plex Sans Condensed\""
+            },
+            {
+              "src": [
+                "file:./assets/fonts/ibm-plex-sans-condensed/ibm-plex-sans-condensed-300-italic.woff2"
+              ],
+              "fontWeight": "300",
+              "fontStyle": "italic",
+              "fontFamily": "\"IBM Plex Sans Condensed\""
+            },
+            {
+              "src": [
+                "file:./assets/fonts/ibm-plex-sans-condensed/ibm-plex-sans-condensed-400-italic.woff2"
+              ],
+              "fontWeight": "400",
+              "fontStyle": "italic",
+              "fontFamily": "\"IBM Plex Sans Condensed\""
+            },
+            {
+              "src": [
+                "file:./assets/fonts/ibm-plex-sans-condensed/ibm-plex-sans-condensed-500-italic.woff2"
+              ],
+              "fontWeight": "500",
+              "fontStyle": "italic",
+              "fontFamily": "\"IBM Plex Sans Condensed\""
+            },
+            {
+              "src": [
+                "file:./assets/fonts/ibm-plex-sans-condensed/ibm-plex-sans-condensed-600-italic.woff2"
+              ],
+              "fontWeight": "600",
+              "fontStyle": "italic",
+              "fontFamily": "\"IBM Plex Sans Condensed\""
+            },
+            {
+              "src": [
+                "file:./assets/fonts/ibm-plex-sans-condensed/ibm-plex-sans-condensed-700-italic.woff2"
+              ],
+              "fontWeight": "700",
+              "fontStyle": "italic",
+              "fontFamily": "\"IBM Plex Sans Condensed\""
+            }
+          ]
         }
       ],
       "fontSizes": [
@@ -352,10 +645,10 @@
           "gradient": "none"
         },
         "typography": {
-          "fontFamily": "var:preset|font-family|body",
+          "fontFamily": "var:preset|font-family|title",
           "fontSize": "var(--wp--preset--font-size--large)",
-          "fontWeight": "300",
-          "letterSpacing": "calc(-3px)",
+          "fontWeight": "600",
+          "letterSpacing": "calc(1.3px)",
           "textTransform": "none"
         }
       }
