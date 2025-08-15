@@ -5,12 +5,18 @@ const primary = twPalette['sky-900'];
 const buttonBg = twPalette['sky-900'];
 const buttonBgHover = twPalette['sky-800'];
 const buttonShadow = "rgba(0,0,0,0.1)";
-const siteTitle = twPalette['gray-200'];
+const siteTitle = twPalette['gray-300'];
+const headings = twPalette['sky-800'];
 const siteNavbarText = twPalette['gray-200'];
 const siteNavbarBg = twPalette['gray-200'];
 const siteNavbarBgScrolled = twPalette['gray-200'];
 
 module.exports = [
+	{
+		color: headings,
+		name: 'Headings',
+		slug: 'headings',
+	},
 	{
 		color: siteNavbarText,
 		name: 'Site Navbar Text',

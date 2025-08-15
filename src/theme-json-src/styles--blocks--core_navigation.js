@@ -19,11 +19,11 @@ module.exports = {
 		fontFamily: 'var:preset|font-family|body',
 		fontSize: 'var(--wp--preset--font-size--sml-medium)',
 	},
-	background: {
-		backgroundImage: {
-			url: '',
-		},
-	},
+	// background: {
+	// 	backgroundImage: {
+	// 		url: '',
+	// 	},
+	// },
 	color: {
 		background: '',
 		gradient: '',
