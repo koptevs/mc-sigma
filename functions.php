@@ -42,7 +42,7 @@ function mc_sigma_register_pattern_category()
 	}
 }
 
-// add_action( 'init', 'mc_sigma_register_pattern_category');
+add_action( 'init', 'mc_sigma_register_pattern_category');
 
 
 
