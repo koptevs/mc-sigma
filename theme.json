@@ -22,12 +22,17 @@
       ],
       "palette": [
         {
+          "color": "oklch(0.443 0.11 240.79)",
+          "name": "Headings",
+          "slug": "headings"
+        },
+        {
           "color": "oklch(0.928 0.006 264.531)",
           "name": "Site Navbar Text",
           "slug": "site-navbar-text"
         },
         {
-          "color": "oklch(0.928 0.006 264.531)",
+          "color": "oklch(0.872 0.01 258.338)",
           "name": "Site Title",
           "slug": "site-title"
         },
@@ -609,11 +614,6 @@
           "fontFamily": "var:preset|font-family|body",
           "fontSize": "var(--wp--preset--font-size--sml-medium)"
         },
-        "background": {
-          "backgroundImage": {
-            "url": ""
-          }
-        },
         "color": {
           "background": "",
           "gradient": "",
@@ -638,7 +638,6 @@
         }
       },
       "core/site-title": {
-        "css": "",
         "color": {
           "text": "var(--wp--preset--color--site-title)",
           "background": "none",
@@ -701,6 +700,114 @@
           "color": {
             "background": "var(--wp--preset--color--button-bg-hover)",
             "text": "var(--wp--preset--color--white)"
+          }
+        }
+      },
+      "h1": {
+        "color": {
+          "text": "var(--wp--preset--color--headings)"
+        },
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--title)",
+          "fontSize": "var(--wp--preset--font-size--xx-large)",
+          "fontWeight": "600",
+          "lineHeight": "1.15",
+          "letterSpacing": "normal",
+          "textTransform": "none"
+        },
+        "spacing": {
+          "padding": {
+            "top": "",
+            "right": "20px",
+            "bottom": "",
+            "left": "20px"
+          },
+          "margin": {
+            "top": "",
+            "right": "20px",
+            "bottom": "",
+            "left": "20px"
+          }
+        }
+      },
+      "h2": {
+        "color": {
+          "text": "var(--wp--preset--color--headings)"
+        },
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--title)",
+          "fontSize": "var(--wp--preset--font-size--x-large)",
+          "fontWeight": "600",
+          "lineHeight": "1.15",
+          "letterSpacing": "0.8px",
+          "textTransform": "none"
+        },
+        "spacing": {
+          "padding": {
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          },
+          "margin": {
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        }
+      },
+      "h3": {
+        "color": {
+          "text": "var(--wp--preset--color--headings)"
+        },
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--title)",
+          "fontSize": "var(--wp--preset--font-size--large)",
+          "fontWeight": "600",
+          "lineHeight": "1.15",
+          "letterSpacing": "0.8px",
+          "textTransform": "none"
+        },
+        "spacing": {
+          "padding": {
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          },
+          "margin": {
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        }
+      },
+      "h4": {
+        "color": {
+          "text": "var(--wp--preset--color--headings)"
+        },
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--title)",
+          "fontSize": "var(--wp--preset--font-size--mdm-large)",
+          "fontWeight": "600",
+          "lineHeight": "1.15",
+          "letterSpacing": "0.8px",
+          "textTransform": "none"
+        },
+        "spacing": {
+          "padding": {
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          },
+          "margin": {
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
           }
         }
       }
