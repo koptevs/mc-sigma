@@ -8,7 +8,7 @@
  * Post Types: page, wp_template
  */
 ?>
-<!-- wp:cover {"url":"http://mc-sigma.local/wp-content/themes/mc-sigma/assets/images/banner.jpg","id":38,"dimRatio":60,"overlayColor":"black","isUserOverlayColor":true,"focalPoint":{"x":0.39,"y":0.54},"minHeight":700,"contentPosition":"top center","sizeSlug":"full","metadata":{"name":"Banner"},"style":{"spacing":{"margin":{"top":"0","bottom":"0"},"padding":{"top":"0","bottom":"0","left":"0","right":"0"}},"color":{"duotone":"unset"}},"layout":{"type":"default"}} -->
+<!-- wp:cover {"url":"<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/images/banner.jpg","id":38,"dimRatio":60,"overlayColor":"black","isUserOverlayColor":true,"focalPoint":{"x":0.39,"y":0.54},"minHeight":700,"contentPosition":"top center","sizeSlug":"full","metadata":{"name":"Banner"},"style":{"spacing":{"margin":{"top":"0","bottom":"0"},"padding":{"top":"0","bottom":"0","left":"0","right":"0"}},"color":{"duotone":"unset"}},"layout":{"type":"default"}} -->
 <div class="wp-block-cover has-custom-content-position is-position-top-center"
     style="margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;min-height:700px">
     <img class="wp-block-cover__image-background wp-image-38 size-full" alt=""
@@ -30,24 +30,30 @@
                 <div class="wp-block-group">
                     <!-- wp:heading {"textAlign":"center","style":{"typography":{"fontSize":"70px","fontStyle":"normal","fontWeight":"500","letterSpacing":"3px"}},"fontFamily":"title"} -->
                     <h2 class="wp-block-heading has-text-align-center has-title-font-family"
-                        style="font-size:70px;font-style:normal;font-weight:500;letter-spacing:3px"><?php echo esc_html__('Mācību centrs', 'mc-alfa'); ?></h2>
+                        style="font-size:70px;font-style:normal;font-weight:500;letter-spacing:3px">
+                        <?php echo esc_html__('Mācību centrs', 'mc-alfa'); ?>
+                    </h2>
                     <!-- /wp:heading -->
 
                     <!-- wp:heading {"textAlign":"center","style":{"typography":{"fontSize":"75px","fontStyle":"normal","fontWeight":"600","letterSpacing":"3px","lineHeight":"1.2"},"spacing":{"padding":{"top":"0px","bottom":"0px"}}},"fontFamily":"title"} -->
                     <h2 class="wp-block-heading has-text-align-center has-title-font-family"
                         style="padding-top:0px;padding-bottom:0px;font-size:75px;font-style:normal;font-weight:600;letter-spacing:3px;line-height:1.2">
-                        <?php echo esc_html__('MC-Sigma', 'mc-alfa'); ?></h2>
+                        <?php echo esc_html__('MC-Sigma', 'mc-alfa'); ?>
+                    </h2>
                     <!-- /wp:heading -->
 
                     <!-- wp:heading {"textAlign":"center","style":{"typography":{"fontSize":"52px","fontStyle":"normal","fontWeight":"300","letterSpacing":"3px"},"spacing":{"margin":{"top":"9px"}}},"fontFamily":"title"} -->
                     <h2 class="wp-block-heading has-text-align-center has-title-font-family"
                         style="margin-top:9px;font-size:52px;font-style:normal;font-weight:300;letter-spacing:3px">
-                        <?php echo esc_html__('profesionālās tālākizglītības centrs.', 'mc-alfa'); ?></h2>
+                        <?php echo esc_html__('profesionālās tālākizglītības centrs.', 'mc-alfa'); ?>
+                    </h2>
                     <!-- /wp:heading -->
 
                     <!-- wp:paragraph {"align":"left","style":{"typography":{"fontSize":"18px","lineHeight":"1.7"},"spacing":{"margin":{"top":"55px","bottom":"0px"}},"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white","fontFamily":"body"} -->
                     <p class="has-text-align-left has-white-color has-text-color has-link-color has-body-font-family"
-                        style="margin-top:55px;margin-bottom:0px;font-size:18px;line-height:1.7"><?php echo esc_html__('Mācību centrs MC-Sigma ir Latvijā llabākais privātais pieaugušo profesionālās tālākizglītības centrs, kas dibināts 2026. gadā. Mēs piedāvājam plašu izglītības pakalpojumu klāstu, kas pieejams visos Latvijas reģionos gan klātienē, gan attālināti.', 'mc-alfa'); ?>
+                        style="margin-top:55px;margin-bottom:0px;font-size:18px;line-height:1.7">
+                        <?php echo esc_html__('Mācību centrs MC-Sigma ir Latvijā llabākais privātais pieaugušo profesionālās tālākizglītības centrs, kas dibināts 2026. gadā. Mēs piedāvājam plašu izglītības pakalpojumu klāstu, kas pieejams visos Latvijas reģionos gan klātienē, gan attālināti.', 'mc-alfa'); ?>
+                    </p>
                     <!-- /wp:paragraph -->
 
                     <!-- wp:paragraph {"align":"left","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}},"typography":{"fontSize":"18px","lineHeight":"1.7"},"spacing":{"margin":{"top":"10px","bottom":"0px"}}},"textColor":"white","fontFamily":"body"} -->
@@ -68,9 +74,11 @@
                         <!-- /wp:button -->
 
                         <!-- wp:button {"backgroundColor":"secondary","style":{"typography":{"fontStyle":"normal","fontWeight":"400"}}} -->
-                        <div class="wp-block-button"><a
-                                class="wp-block-button__link has-secondary-background-color has-background wp-element-button"
-                                style="font-style:normal;font-weight:400">Macību programmas</a></div>
+                        <div class="wp-block-button">
+                            <a class="wp-block-button__link has-secondary-background-color has-background wp-element-button"
+                                style="font-style:normal;font-weight:400">Macību programmas
+                            </a>
+                        </div>
                         <!-- /wp:button -->
                     </div>
                     <!-- /wp:buttons -->
